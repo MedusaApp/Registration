@@ -1,0 +1,21 @@
+{
+    "name": "medusaapp/registration",
+    "description": "Registration traits for MEDUSA Core Simple Personality Package",
+    "type": "library",
+    "license": "GNU LGPL v3",
+    "authors": [
+        {
+            "name": "David Weiner",
+            "email": "david.l.weiner30030@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "illuminate/auth": "5.8.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Personality\\Registration\\": ""
+        }
+    }
+}

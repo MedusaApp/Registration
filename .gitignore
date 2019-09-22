@@ -1,0 +1,9 @@
+
+/vendor/
+/.idea/.gitignore
+/.idea/composerJson.xml
+/.idea/core-registration.iml
+/.idea/misc.xml
+/.idea/modules.xml
+/.idea/php.xml
+/.idea/vcs.xml
