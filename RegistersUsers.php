@@ -29,6 +29,9 @@ trait RegistersUsers
 
         event(new Registered($user = $this->create($request->all())));
 
+        // Give the new user default permissions
+        $user->assign('member');
+
         if (config('medusa.membership_approve') === false) {
             $this->guard()->login($user);
         }
