@@ -22,7 +22,7 @@ trait RegisterValidation
             'city' => ['required', 'string', 'max:100'],
             'state_province' => ['required', 'string', 'max:100'],
             'postal_code' => ['required', 'string', 'max:25'],
-            'country' => ['requied', 'string', 'max:3'],
+            'country' => ['required', 'string', 'max:3'],
             'dob' => ['required', 'date'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'telephone' => ['max:30'],
