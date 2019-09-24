@@ -4,6 +4,7 @@ namespace Personality\Registration;
 use \App\User;
 use \Illuminate\Auth\Events\Registered;
 use \Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
 
 trait RegistersUsers
 {
