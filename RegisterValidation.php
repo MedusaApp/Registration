@@ -15,17 +15,14 @@ trait RegisterValidation
     {
         return Validator::make($data, [
             'first_name' => ['required', 'string', 'max:25'],
-            'middle_name' => ['present', 'string', 'max:25'],
             'last_name' => ['required', 'string', 'max:25'],
             'address_1' => ['required', 'string', 'max:100'],
-            'address_2' => ['present', 'string', 'max:100'],
             'city' => ['required', 'string', 'max:100'],
             'state_province' => ['required', 'string', 'max:100'],
             'postal_code' => ['required', 'string', 'max:25'],
             'country' => ['required', 'string', 'max:3'],
             'dob' => ['required', 'date'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
-            'telephone' => ['present', 'max:30'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
         ]);
     }
