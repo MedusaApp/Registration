@@ -1,7 +1,7 @@
 <?php
 namespace Personality\Registration;
 
-use \App\User;
+use \App\Models\User;
 use \Illuminate\Auth\Events\Registered;
 use \Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
@@ -33,9 +33,9 @@ trait RegistersUsers
         // Give the new user default permissions
         $user->assign('member');
 
-        if (config('medusa.membership_approve') === false) {
+//        if (config('medusa.membership_approve') === false) {
             $this->guard()->login($user);
-        }
+//        }
 
         return $this->registered($request, $user)
             ?: redirect($this->redirectPath());
@@ -48,7 +48,7 @@ trait RegistersUsers
      */
     protected function guard()
     {
-        return Auth::guard();
+        return \Auth::guard();
     }
 
     /**
