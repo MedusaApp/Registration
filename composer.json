@@ -2,7 +2,7 @@
     "name": "medusaapp/registration",
     "description": "Registration traits for MEDUSA Core Simple Personality Package",
     "type": "library",
-    "license": "GNU LGPL v3",
+    "license": "GPL-3.0-or-later",
     "authors": [
         {
             "name": "David Weiner",
