@@ -1,10 +1,10 @@
 <?php
 namespace Personality\Registration;
 
-use \App\Models\User;
+use Personality\Models\User;
 use \Illuminate\Auth\Events\Registered;
 use \Illuminate\Http\Request;
-use Illuminate\Support\Facades\Hash;
+use \Illuminate\Support\Facades\Hash;
 
 trait RegistersUsers
 {
